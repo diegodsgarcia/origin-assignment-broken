@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
@@ -6,6 +15,23 @@ body {
     user-select: none;
     font-weight: 100;
     font-size: 29px;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 500px;
+    min-height: 250px;
+    margin: 0 auto;
 }
 
 .Logo {
@@ -17,8 +43,9 @@ body {
 
 button {
     width: 100%;
-    font-size: 1em;
+    font-size: .9em;
     font-weight: 100;
+    padding: .5rem .2rem;
     border: none;
     background: #2196F3;
     color: white;
@@ -31,7 +58,9 @@ button:disabled {
     cursor: not-allowed;
 }
 
-h3 {}
+h3 {
+    font-size: 1rem;
+}
 
 @media (max-width: 600px) {
     body {
