@@ -15,7 +15,7 @@ export const filter = (vin: string) =>
         .replace(invalidChars, "")
 
 export const validate = (_vin: string): string => {
-    if (_vin.length !== Infos.VIN_LENGTH) {
+    if (!_vin || _vin.length !== Infos.VIN_LENGTH) {
         return Infos.CHARS_EXPECTED
     }
 }
