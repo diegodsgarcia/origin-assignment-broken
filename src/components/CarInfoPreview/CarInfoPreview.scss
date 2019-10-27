@@ -1,0 +1,12 @@
+.CarInfoPreview {
+    width: 100%;
+    font-size: 1.4rem;
+
+    &__Line {
+        padding: .5rem 0;
+        border-top: 1px solid #ccc;
+    }
+    &__Line:first-child {
+        border-top: none;
+    }
+}

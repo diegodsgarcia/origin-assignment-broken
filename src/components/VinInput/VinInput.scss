@@ -1,0 +1,32 @@
+$color: #ff9393;
+
+.VinInput {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+
+    input {
+        width: inherit;
+        height: 50px;
+        border-radius: 5px;
+        border: 0;
+        padding: 0 .5rem;
+        caret-color: #1056ad;
+        background-color: #f2f3f3;
+        font-size: 1.8rem;
+    }
+    &__Error {
+        color: $color;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #bbb
+}
+
+*:focus {
+    outline: none;
+}

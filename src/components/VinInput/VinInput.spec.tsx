@@ -1,6 +1,6 @@
 import * as React from "react"
 import { shallow } from "enzyme"
-import { VinInput } from "./VinInput"
+import { VinInput } from "."
 
 describe("<VinInput>", () => {
     it("should exist", () => expect(VinInput).toBeDefined())
