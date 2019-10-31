@@ -8,7 +8,7 @@ describe("Vin Service", () => {
         it("gives empty result when response contains no data", () =>
             expect(convert(vinCheckResponseFixture({ Results: [] }))).toEqual(null))
 
-        const entry = (Variable: string, Value: string) => vinResultEntryFixture({ Variable, Value })
+        const entry = (Model: string, Make: string) => vinResultEntryFixture({ Model, Make })
 
         it("takes make from Results array", () =>
             expect(convert(vinCheckResponseFixture({ Results: [entry("Make", "HONDA")] })).make).toEqual("HONDA"))
